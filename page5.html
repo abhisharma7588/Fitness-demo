@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Goals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+    <div class="flex items-center justify-center flex-col">
+        <div>
+            <h2 class="font-bold text-lg mt-4">What are your goals?</h2>
+        </div>
+        <div class="mt-6">
+            <div class="flex justify-between mt-3 border w-72 px-3 py-2 rounded-md bg-gray-200 ">
+                <label for="weight-loss" class="text-[16px] font-semibold text-gray-800">Weight Loss</label>
+                <input class="form-radio h-4 w-4 rounded-sm text-indigo-600" type="checkbox" id="weight-loss">
+            </div>
+            <div class="flex justify-between mt-3 border w-72 px-3 py-2 rounded-md bg-gray-200 ">
+                <label for="muscle-gain" class="text-[16px] font-semibold text-gray-800">Muscle Gain</label>
+                <input class="form-radio h-4 w-4 rounded-sm text-indigo-600" type="checkbox" id="muscle-gain">
+            </div>
+            <div class="flex justify-between mt-3 border w-72 px-3 py-2 rounded-md bg-gray-200 ">
+                <label for="flexibility" class="text-[16px] font-semibold text-gray-800">Flexibility and Mobility</label>
+                <input class="form-radio h-4 w-4 rounded-sm text-indigo-600" type="checkbox" id="flexibility">
+            </div>
+            <div class="flex justify-between mt-3 border w-72 px-3 py-2 rounded-md bg-gray-200 ">
+                <label for="general" class="text-[16px] font-semibold text-gray-800">General Fitness</label>
+                <input class="form-radio h-4 w-4 rounded-sm text-indigo-600" type="checkbox" id="general">
+            </div>
+            <div class="flex justify-between mt-3 border w-72 px-3 py-2 rounded-md bg-gray-200 ">
+                <label for="event" class="text-[16px] font-semibold text-gray-800">Event-Specific training</label>
+                <input class="form-radio h-4 w-4 rounded-sm text-indigo-600" type="checkbox" id="event">
+            </div>
+            <div class="flex justify-between mt-3 border w-72 px-3 py-2 rounded-md bg-gray-200 ">
+                <label for="mindfulness" class="text-[16px] font-semibold text-gray-800">Mindfulness and Mental Health</label>
+                <input class="form-radio h-4 w-4 rounded-sm text-indigo-600" type="checkbox" id="mindfulness">
+            </div>
+    </div>
+    <div class="mt-16">
+        <button id="redirectButton" class="w-72 border bg-blue-400 rounded-lg py-1.5 text-white hover:scale-105 duration-300">Confirm</button>
+    </div>
+    
+
+    <script>
+        const redirectButton = document.getElementById('redirectButton');
+        
+        redirectButton.addEventListener('click', function() {
+          window.location.href = "./page6.html";
+        });
+        
+    </script>
+</body>
+</html>
